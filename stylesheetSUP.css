@@ -146,9 +146,7 @@ a {
   margin-bottom: 22px;
 }
 
-/* =====================
-   FORM ELEMENTS
-===================== */
+
 form label {
   font-size: 13px;
   color: #334155;
@@ -169,9 +167,7 @@ form input:focus {
   border-color: #48c7b4;
 }
 
-/* =====================
-   TOGGLE SWITCH
-===================== */
+
 .toggle {
   display: flex;
   align-items: center;
@@ -180,6 +176,9 @@ form input:focus {
   cursor: pointer;
 }
 
+.form-box p,h2 { 
+  text-align: center;
+}
 .toggle input {
   display: none;
 }
@@ -217,9 +216,6 @@ form input:focus {
   color: #334155;
 }
 
-/* =====================
-   SIGN IN BUTTON
-===================== */
 form input[type="button"] {
   width: 100%;
   padding: 14px;
@@ -238,9 +234,7 @@ form input[type="button"]:hover {
   box-shadow: 0 10px 25px rgba(72, 199, 180, 0.35);
 }
 
-/* =====================
-   SIGNUP TEXT
-===================== */
+
 .signup-text {
   text-align: center;
   font-size: 13px;
@@ -252,9 +246,7 @@ form input[type="button"]:hover {
   font-weight: 600;
 }
 
-/* =====================
-   SOCIAL ICONS
-===================== */
+
 .social-links ul {
   list-style: none;
   padding: 0;
@@ -265,8 +257,8 @@ form input[type="button"]:hover {
 }
 
 .social-links a {
-  width: 46px;
-  height: 46px;
+  width: 56px;
+  height: 56px;
   border-radius: 12px;
   border: 1px solid #e5e7eb;
   display: flex;
