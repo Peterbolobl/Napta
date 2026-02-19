@@ -5,7 +5,76 @@
     <title>Layout With Sidebar</title>
     <link rel="stylesheet" href="Dashboard.css">
 </head>
+
+
+
+
+
+
 <body>
+    <nav> 
+            <div class="navbar">
+                <div class="navbar-left">
+                    <span class="breadcrumb">Dashboard / <span class="breadcrumb-active">Plant Analysis</span></span>
+                </div>
+
+                <div class="navbar-center">
+                    <div class="progress-steps">
+                        <span class="step-label">Upload</span>
+                        <span class="arrow">→</span>
+                        <span class="step-label">Detect</span>
+                        <span class="arrow">→</span>
+                        <span class="step-label">Classify</span>
+                        <span class="arrow">→</span>
+                        <span class="step-label">Segment</span>
+                    </div>
+                    <div class="progress-dots">
+                        <span class="dot dot-done">✓</span>
+                        <div class="dot-line"></div>
+                        <span class="dot dot-done">✓</span>
+                        <div class="dot-line"></div>
+                        <span class="dot dot-active"></span>
+                        <div class="dot-line dot-line-gray"></div>
+                        <span class="dot dot-gray"></span>
+                    </div>
+                </div>
+
+                <div class="navbar-right">
+                    <div class="search-box">
+                        <svg width="14" height="14" fill="none" stroke="#9CA3AF" stroke-width="2" viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8"/>
+                            <path d="M21 21l-4.35-4.35"/>
+                        </svg>
+                        <input type="text" placeholder="Type here...">
+                    </div>
+                    <div class="nav-icon">
+                        <svg width="18" height="18" fill="none" stroke="#9CA3AF" stroke-width="2" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                        </svg>
+                    </div>
+                    <div class="nav-icon">
+                        <svg width="18" height="18" fill="none" stroke="#9CA3AF" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                        </svg>
+                    </div>
+                    <!-- Settings Icon -->
+                    <div class="nav-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19.14 12.94c.04-.3.06-.61.06-.94s-.02-.64-.07-.94l2.03-1.58a.49.49 0 0 0 .12-.61l-1.92-3.32a.49.49 0 0 0-.59-.22l-2.39.96a7.1 7.1 0 0 0-1.62-.94l-.36-2.54A.484.484 0 0 0 14 2h-4a.484.484 0 0 0-.48.41l-.36 2.54a7.1 7.1 0 0 0-1.62.94l-2.39-.96a.48.48 0 0 0-.59.22L2.74 8.87a.47.47 0 0 0 .12.61l2.03 1.58c-.05.3-.07.62-.07.94s.02.64.07.94l-2.03 1.58a.47.47 0 0 0-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.36 1.04.67 1.62.94l.36 2.54c.05.24.27.41.48.41h4c.24 0 .44-.17.47-.41l.36-2.54a7.1 7.1 0 0 0 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32a.47.47 0 0 0-.12-.61l-2.01-1.58z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </div>
+                    
+                </div>
+            </div>    
+
+    </nav>
+
+
+
+    
 
     <!-- Sidebar -->
     <aside class="sidebar">
@@ -23,8 +92,18 @@
                 </div>
                 <span>Plant Analysis</span>
             </li>
-            <li>T1</li>
-            <li>T2</li>
+            <li class="AI-item">
+                <div class="AI-icon">
+                    <img src="/images/AIFFF.png" alt="AI Logo">
+                </div>
+                <span>AI Assistant</span>
+            </li>
+            <li class="History-Item">
+                <div class="History-icon">
+                    <img src="./images/historyfff.png">
+                </div>
+                <span>History</span>
+            </li>
         </ul>
         <hr class="sidebar-hr-bottom">
 
@@ -43,6 +122,7 @@
         </ul>
 
     </aside>
+    
 
     <!-- Main Content -->
     <div class="main-content">

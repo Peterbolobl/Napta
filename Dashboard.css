@@ -75,21 +75,22 @@ body {
     background-color: #E6F7F5;
 }
 
-.menu-icon {
+.menu-icon,.AI-icon,.History-icon {
     width: 30px;
     height: 30px;
-    background-color: #4FD1C5;
+    background-color:rgb(229, 231, 235);
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.menu-icon img {
+.menu-icon img ,.AI-icon img ,.History-icon img {
     width: 25px;
     height: 25px;
     margin-bottom: 4px;
 }
+
 
 /* النص */
 .menu li span {
@@ -98,10 +99,9 @@ body {
     color: #374151;
 }
 
-/* العنصر النشط */
 .active-item {
-    background-color: #FFFFFF;
-    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+    /* background-color: #FFFFFF;
+    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25); */
 
 }
 
@@ -479,6 +479,157 @@ body {
   list-style: none;
   display: flex;
   gap: 24px;
+}
+/* ================= Navbar ================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 250px;
+    right: 0;
+    height: 70px;
+    background-color: #F8F9FA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    z-index: 100;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.navbar-left .breadcrumb {
+    font-size: 13px;
+    color: #9CA3AF;
+}
+
+.breadcrumb-active {
+    color: #374151;
+    font-weight: 600;
+}
+
+/* Progress Steps */
+.navbar-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.progress-steps {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.step-label {
+    font-size: 12px;
+    color: #6B7280;
+    font-weight: 500;
+}
+
+.arrow {
+    color: #9CA3AF;
+    font-size: 12px;
+}
+
+.progress-dots {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.dot {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+}
+
+.dot-done {
+    background-color: #22C55E;
+}
+
+.dot-active {
+    background-color: #53C8BF;
+    border: 3px solid #A7F3D0;
+}
+
+.dot-gray {
+    background-color: #D1D5DB;
+}
+
+.dot-line {
+    width: 50px;
+    height: 2px;
+    background-color: #22C55E;
+}
+
+.dot-line-gray {
+    background-color: #D1D5DB;
+}
+
+/* Search & Icons */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 7px 12px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 13px;
+    color: #374151;
+    width: 130px;
+}
+
+.search-box input::placeholder {
+    color: #9CA3AF;
+}
+
+.nav-icon {
+    width: 35px;
+    height: 35px;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-icon:hover {
+    background-color: #53C8BF;
+    border-color: #53C8BF;
+}
+
+.nav-icon:hover svg {
+    stroke: #FFFFFF;
+}
+
+.nav-icon:active {
+    transform: scale(0.93);
+    background-color: #3aa79d;
+    border-color: #3aa79d;
 }
 
 
