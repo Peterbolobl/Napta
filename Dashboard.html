@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout With Sidebar</title>
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="sidebar-header">
+            <img src="./images/Logo.png" alt="Nabta Logo">
+        </div>
+
+        <hr>
+
+        <ul class="menu">
+            <li class="active-item">
+                <div class="menu-icon">
+                    <img src="./images/plant-icon.png" alt="icon">
+                </div>
+                <span>Plant Analysis</span>
+            </li>
+            <li>T1</li>
+            <li>T2</li>
+        </ul>
+        <hr class="sidebar-hr-bottom">
+
+        <p class="section-label">ACCOUNT PAGES</p>
+
+        <ul class="menu">
+            <li>
+                <div class="menu-icon icon-gray">
+                    <svg width="16" height="16" fill="none" stroke="#9CA3AF" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                    </svg>
+                </div>
+                <span>Profile</span>
+            </li>
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+
+            <!-- Top Large Card -->
+            <div class="card large-card">
+                <div class="inner-box">
+                    <div class="layer-3">
+                        <div class="upload-content">
+
+                            <div class="image-box">
+                                <img src="./images/Background.png" alt="plant">
+                            </div>
+
+                            <div class="upload-text">
+                                <div class="image-upload">
+                                    <img src="./images/upload.jpeg" alt="upload">
+                                </div>
+                                <h2>Drag and drop an image here</h2>
+                                <p>Supported formats: JPG, PNG. Max file size 5MB.</p>
+                                <button class="upload-btn">Upload Image</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Cards -->
+            <div class="cards-row">
+                <div class="card small-card">
+                    <!-- Card 1: Object Detection -->
+                    <div class="card small-card detection-card">
+                        <div class="detection-header">
+                            <div>
+                                <h2 class="detection-title">Object Detection</h2>
+                                <p class="detection-subtitle">Object detection result with cropped plant regions</p>
+                            </div>
+                        </div>
+                        <div class="detection-image-box">
+                            <span class="completed-badge">Completed</span>
+                            <img src="./images/Gemini_Generate.png" alt="Object Detection Result">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card small-card">
+                    <!-- Card 2: Classification -->
+                    <div class="card small-card classification-card">
+                        <div class="classification-header">
+                            <div>
+                                <h2 class="classification-title">Classification</h2>
+                                <p class="classification-subtitle">Plant disease classification result</p>
+                            </div>
+                            <span class="classifier-badge">CNN-based classifier</span>
+                        </div>
+
+                        <div class="classification-content">
+                            <div class="classification-image-box">
+                                <img src="./images/Background (1).png" alt="Classified Plant">
+                            </div>
+                            <div class="classification-info">
+                                <p class="info-label">Predicted disease :</p>
+                                <p class="info-value">Apple Scab</p>
+                                <p class="info-label">Disease category</p>
+                                <p class="info-value">Fungal Disease</p>
+                            </div>
+                        </div>
+
+                        <div class="confidence-section">
+                            <p class="confidence-text">Model confidence: <span class="confidence-value">90.09% (High Confidence)</span></p>
+                            <div class="confidence-bar-bg">
+                                <div class="confidence-bar-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- Card 3: Segmentation -->
+                <div class="card small-card">
+                    <div class="card small-card segmentation-card">
+                        <div class="segmentation-header">
+                            <div>
+                                <h2 class="segmentation-title">Segmentation</h2>
+                                <p class="segmentation-subtitle">Segmentation mask visualization</p>
+                            </div>
+                        </div>
+                        <div class="segmentation-image-box">
+                            <span class="completed-badge">Completed</span>
+                            <img src="./images/opacity-planet.jpg" alt="Segmentation Result">
+                        </div>
+                    </div>                                      
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+</body>
+<footer class="footer">
+    <p>© 2026, Made with team seniors Dr. Mourad</p>
+    <ul>
+      <li>Creative Tim</li>
+      <li>Simplimple</li>
+      <li>Blog</li>
+      <li>License</li>
+    </ul>
+  </footer>
+</html>

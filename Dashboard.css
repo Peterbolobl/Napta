@@ -1,0 +1,499 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: #F8F9FA;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+
+/* ================= Sidebar ================= */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #F8F9FA;
+    padding: 30px 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/* ===== Logo Section ===== */
+
+.sidebar-header {
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+}
+
+
+.sidebar-header img {
+    width: 130px;
+    display: block;
+}
+
+
+
+
+.sidebar hr {
+    border: none;
+    height: 1px;
+    background-color: #E5E7EB;
+    margin: 15px 13px 32px 13px;
+}
+
+/* ===== Menu ===== */
+
+.logo {
+    margin-bottom: 40px;
+    font-size: 22px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 13px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu li:hover {
+    background-color: #E6F7F5;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #4FD1C5;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icon img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 4px;
+}
+
+/* النص */
+.menu li span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #374151;
+}
+
+/* العنصر النشط */
+.active-item {
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+
+}
+
+/* ================= Main Content ================= */
+
+.main-content {
+    margin-left: 250px;
+    width: 100%;
+}
+
+.container {
+    width: 97%;
+    margin: 80px auto;
+}
+
+/* Cards */
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+}
+
+.large-card {
+    height: 250px;
+    margin-bottom: 12px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* الكارد الداخلي */
+.inner-box {
+    width: 100%;
+    height: 227px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    border: 2px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layer-3 {
+    width: 96%;
+    height: 88%;
+    background-color: #F3F4F6;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px -4px rgba(0, 0, 0, 0.25);
+}
+
+.upload-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+/* صورة الشمال */
+.image-box {
+    width: 180px;
+    height: 180px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-upload img {
+    width: 70px;
+    height: auto;
+    margin-bottom: 10px;
+
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.upload-text {
+    text-align: center;
+    flex: 1;
+}
+
+.upload-text h2 {
+    font-size: 24px;
+    color: #8C8F94;
+    margin-bottom: 10px;
+}
+
+.upload-text p {
+    font-size: 16px;
+    color: #5A6463;
+    margin-bottom: 23px;
+}
+
+.upload-btn {
+    background-color: #53C8BF;
+    color: white;
+    border: none;
+    padding: 11px 27px;
+    border-radius: 13px;
+    cursor: pointer;
+    font-size: 14.5px;
+    transition: 0.3s;
+    margin-bottom: 5px;
+}
+
+.upload-btn:hover {
+    background-color: #3aa79d;
+    transform: translateY(-2px);
+}
+
+.cards-row {
+    display: flex;
+    gap: 15px;
+}
+
+.small-card {
+    flex: 1;
+    height: 280px;
+}
+.detection-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.detection-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.detection-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 4px;
+}
+
+.detection-subtitle {
+    font-size: 13px;
+    color: #6B7280;
+}
+
+.detection-image-box {
+    position: relative;
+    background-color: #F9FAFB;
+    border-radius: 12px;
+    border: 1px solid #E5E7EB;
+    flex: 1;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.detection-image-box img {
+    width: 50%;
+    height: 100;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.completed-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: #22C55E;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    z-index: 1;
+}
+/* ================= Segmentation Card ================= */
+
+.segmentation-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.segmentation-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.segmentation-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 4px;
+}
+
+.segmentation-subtitle {
+    font-size: 13px;
+    color: #6B7280;
+}
+
+.segmentation-image-box {
+    position: relative;
+    background-color: #F9FAFB;
+    border-radius: 12px;
+    border: 1px solid #E5E7EB;
+    flex: 1;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 0;
+}
+
+.segmentation-image-box img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* ================= Classification Card ================= */
+
+.classification-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.classification-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.classification-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 4px;
+}
+
+.classification-subtitle {
+    font-size: 13px;
+    color: #6B7280;
+}
+
+.classifier-badge {
+    background-color: #22C55E;
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.classification-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #F9FAFB;
+    border-radius: 12px;
+    border: 1px solid #E5E7EB;
+    padding: 15px;
+}
+
+.classification-image-box {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.classification-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.classification-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.info-label {
+    font-size: 13px;
+    color: #6B7280;
+    margin: 0;
+}
+
+.info-value {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1F2937;
+    margin: 0;
+}
+
+.confidence-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.confidence-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1F2937;
+}
+
+.confidence-value {
+    color: #22C55E;
+    font-weight: 700;
+}
+
+.confidence-bar-bg {
+    width: 100%;
+    height: 8px;
+    background-color: #E5E7EB;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.confidence-bar-fill {
+    height: 100%;
+    background-color: #22C55E;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+.footer {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  padding: 0 200px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #94a3b8;
+}
+.sidebar-hr-bottom {
+    border: none;
+    height: 1px;
+    background-color: #E5E7EB;
+    margin: 10px 13px 15px 13px;
+}
+
+.section-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: #9CA3AF;
+    letter-spacing: 1px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.icon-gray {
+    background-color: #E5E7EB;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+
+/* ================= Responsive ================= */
+
+@media (max-width: 900px) {
+    .cards-row {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+    }
+}
